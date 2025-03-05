@@ -25,10 +25,5 @@ app.get('/jadwal/:kota', async (req, res) => {
     res.json(data);
 });
 
-// Jalankan server di localhost (untuk testing lokal)
-app.listen(PORT, () => {
-    console.log(`✅ Server berjalan di http://localhost:${PORT}`);
-});
-
 // **Agar kompatibel dengan Vercel, export app**
 export default app;
